@@ -324,9 +324,6 @@ func event() {
 				c.Axis(sdl.CONTROLLER_AXIS_RIGHTX) > threshold:
 				p.Vector.X = 1
 				p.Anim = 0x1
-			default:
-				p.Vector.X = 0
-				p.Anim = 0
 			}
 
 			switch {
