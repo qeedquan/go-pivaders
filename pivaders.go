@@ -195,7 +195,7 @@ func loadImage(name string, key color.Color) *Image {
 		return p
 	}
 
-	m, err := imageutil.LoadFile(name)
+	m, err := imageutil.LoadRGBAFile(name)
 	ck(err)
 	m = imageutil.ColorKey(m, key)
 
